@@ -3,8 +3,10 @@
   box-sizing: border-box;
 }
 
+main {
+  margin: 50px;
+}
 img {
-  vertical-align: middle;
   height: auto;
   width: 100%;
 }
@@ -14,85 +16,65 @@ body {
   line-height: 1.6;
 }
 
+article {
+  display: grid;
+  grid-column: 1;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 50px;
+}
+
+.gallery img {
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 812px) {
   main {
-    margin: 5px;
-  }
-  header h1 {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 1rem;
-    background-color: black;
-    padding: 5px;
-    overflow: hidden;
-  }
-
-  section .galari {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
     margin: 10px;
   }
   h1 {
-    color: white;
-    font-size: 1rem;
-    background-color: black;
-    padding: 5px;
-    overflow: hidden;
+    font-size: 2rem;
   }
 }
 
 @media (min-width: 813px) {
-  header h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 4rem;
-    background-color: black;
-    padding: 10px;
-    overflow: hidden;
-  }
-
-  section {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    margin: 50px;
+  h1 {
+    font-size: 5rem;
   }
 }
 
 #video_section {
   display: grid;
-  justify-content: center;
+  place-content: center;
+  margin: 20px;
 }
 
-#video_section h1 {
+#video_section {
   display: grid;
-  justify-content: center;
+  place-content: center;
+  margin: 10px;
 }
 
 video {
   display: grid;
   justify-content: center;
   max-width: 100%;
-  overflow: hidden;
   margin-top: 20px;
-  padding: 10px;
 }
 
 #video_section iframe {
   display: grid;
   justify-content: center;
   margin-top: 30px;
-  max-width: 100%;
-  padding: 10px;
+  min-width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
 }
 
 #knapper {
@@ -109,3 +91,14 @@ video {
 /* .hide {
   display: none;
 } */
+
+#cover {
+  display: grid;
+  place-items: top;
+  padding-bottom: 20px;
+}
+
+h1 {
+  display: grid;
+  place-items: center;
+}

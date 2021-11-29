@@ -10,41 +10,67 @@
   <body>
     <header>
       <div id="cover">
-        <img src="Billeder/Billede_7.jpg" alt="" />
         <h1>Møbelsniker Marie Sonne</h1>
-        <div class="text"></div>
+        <img src="Billeder/Billede_7.jpg" alt="" class="Billede_7" />
       </div>
     </header>
 
-    <section id="knapper">
+    <!-- <section id="knapper">
       <button id="skift">Skift</button>
-    </section>
+    </section> -->
 
     <main>
-      <section id="galari" class="hide">
-        <img src="Billeder/Billede_1.jpg" alt="" />
-        <img src="Billeder/Billede_4.jpg" alt="" />
-        <img src="Billeder/Billede_5.jpg" alt="" />
-        <img src="Billeder/Billede_6.jpg" alt="" />
-        <img src="Billeder/Billede_2.jpg" alt="" />
-        <img src="Billeder/Billede_3.jpg" alt="" />
-      </section>
-
-      <div id="video_section" class="hide">
-        <div><video src="05.01.01_Pilotprojekt.mp4"></video></div>
-
-        <div>
-          <iframe
-            width="1907.5"
-            height="1072.97"
-            src="https://www.youtube.com/embed/pNS3VPc3Qo4"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+      <article>
+        <div class="content">
+          <h2>Sommer sweats are here.</h2>
+          <p>
+            To simplify your every day. A collection of better basics, built to
+            last from the finest natural fibres.
+          </p>
+          <figure>
+            <blockquote cite="https://www.huxley.net/bnw/four.html">
+              <p>
+                Words can be like X-rays, if you use them properly—they’ll go
+                through anything. You read and you’re pierced.
+              </p>
+            </blockquote>
+            <figcaption>
+              —Aldous Huxley, <cite>Brave New World</cite>
+            </figcaption>
+          </figure>
         </div>
-      </div>
+
+        <section>
+          <article>
+            <figure class="galari">
+              <img src="Billeder/Billede_1.jpg" alt="" />
+              <img src="Billeder/Billede_4.jpg" alt="" />
+              <img src="Billeder/Billede_5.jpg" alt="" />
+              <img src="Billeder/Billede_6.jpg" alt="" />
+              <img src="Billeder/Billede_2.jpg" alt="" />
+              <img src="Billeder/Billede_3.jpg" alt="" />
+            </figure>
+          </article>
+        </section>
+      </article>
+
+      <section>
+        <div id="video_section" class="hide">
+          <div><video controls src="05.01.01_Pilotprojekt.mp4"></video></div>
+
+          <div>
+            <iframe
+              width="315"
+              height="560"
+              src="https://www.youtube.com/embed/pNS3VPc3Qo4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <script src="index.js"></script>
