@@ -17,8 +17,8 @@ body {
 }
 
 article {
+  grid-column: 2;
   display: grid;
-  grid-column: 1;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 50px;
 }
@@ -30,6 +30,7 @@ article {
 }
 
 .gallery img {
+  display: grid;
   height: 100%;
   object-fit: cover;
 }
@@ -38,27 +39,12 @@ article {
   main {
     margin: 10px;
   }
-  h1 {
-    font-size: 2rem;
-  }
 }
 
 @media (min-width: 813px) {
   h1 {
     font-size: 5rem;
   }
-}
-
-#video_section {
-  display: grid;
-  place-content: center;
-  margin: 20px;
-}
-
-#video_section {
-  display: grid;
-  place-content: center;
-  margin: 10px;
 }
 
 video {
@@ -77,28 +63,31 @@ video {
   aspect-ratio: 16/9;
 }
 
-#knapper {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 50px;
-}
-
-.skift {
-  display: none;
-}
-
-/* .hide {
-  display: none;
-} */
-
 #cover {
-  display: grid;
-  place-items: top;
-  padding-bottom: 20px;
+  background-image: url(Billeder/Billede_7.jpg);
+  background-size: cover;
+  aspect-ratio: 16/9;
 }
 
 h1 {
   display: grid;
-  place-items: center;
+  place-content: center;
+  color: white;
+  aspect-ratio: 16/9;
 }
+
+/*JS kode*/
+/* #knapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px;
+} */
+
+/* .skift {
+  display: none;
+} */
+
+/* .hide {
+  display: none;
+} */
