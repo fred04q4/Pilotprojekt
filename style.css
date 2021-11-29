@@ -74,4 +74,9 @@ h1 {
   place-content: center;
   color: white;
   aspect-ratio: 16/9;
+  font-family: "Inconsolata", monospace;
+}
+
+p {
+  font-family: "Inconsolata", monospace;
 }
