@@ -93,4 +93,12 @@ h2 {
 
 p {
   font-family: "Inconsolata", monospace;
+  color: black;
+}
+footer {
+  display: grid;
+  place-content: start;
+  margin: 40px;
+  font-size: 0.8rem;
+  gap: 5px;
 }
